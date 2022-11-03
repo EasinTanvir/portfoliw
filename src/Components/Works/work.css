@@ -1,0 +1,154 @@
+.works {
+  padding: 0px 3rem;
+  display: flex;
+  height: 85vh;
+}
+
+.w-lists {
+  display: flex;
+  gap: 2rem;
+}
+
+.w-right {
+  position: relative;
+  margin-top: 9rem;
+}
+.w-mainCircle {
+  left: 9rem;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  top: 2rem;
+  background: white;
+  /* darkMode */
+  z-index: 2;
+}
+.w-mainCircle > * {
+  position: absolute;
+}
+.w-mainCircle > :nth-child(1) {
+  top: -3rem;
+  left: 6rem;
+}
+.w-mainCircle > :nth-child(2) {
+  left: -3rem;
+  top: 5rem;
+}
+.w-mainCircle > :nth-child(3) {
+  left: 6rem;
+  top: 5rem;
+}
+.w-mainCircle > :nth-child(4) {
+  left: 15.2rem;
+  top: 5rem;
+}
+.w-mainCircle > :nth-child(5) {
+  left: 6rem;
+  top: 13rem;
+}
+.w-secCircle {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  border-radius: 100%;
+  border: 5px solid #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: "none";
+  box-shadow: var(--smboxShadow);
+  background: white;
+}
+
+.w-secCircle > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.w-backcirle {
+  position: absolute;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  z-index: -1;
+}
+
+.blueCircle {
+  background: #1949b8;
+  left: 18rem;
+  top: 0rem;
+}
+.yellowCircle {
+  background: #f5c32c;
+  left: 18rem;
+  top: 8rem;
+}
+
+@media screen and (max-width: 992px) {
+  .works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 56rem;
+    padding: 0;
+    gap: 4rem;
+  }
+
+  .w-right {
+    transform: scale(0.7);
+  }
+  .w-mainCircle {
+    position: sticky;
+  }
+
+  .w-backcirle {
+    position: absolute;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 100%;
+    z-index: -1;
+  }
+
+  .w-backcirle {
+    left: 8rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 56rem;
+    padding: 0;
+    gap: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .w-right {
+    transform: scale(0.7);
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .w-mainCircle {
+    position: sticky;
+  }
+
+  .w-backcirle {
+    position: absolute;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 100%;
+    z-index: -1;
+  }
+
+  .w-backcirle {
+    left: 8rem !important;
+  }
+}
